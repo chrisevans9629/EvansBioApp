@@ -22,6 +22,7 @@ namespace EvansBioApp
 
         protected override async void OnInitialized()
         {
+            
             InitializeComponent();
 
             await NavigationService.NavigateAsync("NavigationPage/MainPage");
@@ -31,6 +32,7 @@ namespace EvansBioApp
         {
             containerRegistry.RegisterForNavigation<NavigationPage>();
             containerRegistry.RegisterForNavigation<MainPage>();
+            containerRegistry.RegisterForNavigation<AboutPage>();
         }
     }
 }
