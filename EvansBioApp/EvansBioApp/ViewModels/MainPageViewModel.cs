@@ -14,6 +14,10 @@ namespace EvansBioApp.ViewModels
             : base(navigationService)
         {
             Title = "Main Page";
+            AboutPageCommand = new DelegateCommand(async ()=> await NavigationService.NavigateAsync("AboutPage"));
         }
+
+
+        public DelegateCommand AboutPageCommand { get; set; }
     }
 }
