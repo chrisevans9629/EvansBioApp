@@ -33,6 +33,8 @@ namespace EvansBioApp
             containerRegistry.RegisterForNavigation<NavigationPage>();
             containerRegistry.RegisterForNavigation<MainPage>();
             containerRegistry.RegisterForNavigation<AboutPage>();
+            containerRegistry.RegisterForNavigation<SkillsPage>();
+            containerRegistry.RegisterForNavigation<ContactMePage>();
         }
     }
 }

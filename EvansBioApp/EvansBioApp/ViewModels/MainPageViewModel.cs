@@ -15,9 +15,12 @@ namespace EvansBioApp.ViewModels
         {
             Title = "Main Page";
             AboutPageCommand = new DelegateCommand(async ()=> await NavigationService.NavigateAsync("AboutPage"));
+            SkillsPageCommand = new DelegateCommand(async ()=> await NavigationService.NavigateAsync("SkillsPage"));
+            ContactMePageCommand = new DelegateCommand(async ()=> await NavigationService.NavigateAsync("ContactMePage"));
         }
 
-
+        public DelegateCommand ContactMePageCommand { get; set; }
+        public DelegateCommand SkillsPageCommand { get; set; }
         public DelegateCommand AboutPageCommand { get; set; }
     }
 }
