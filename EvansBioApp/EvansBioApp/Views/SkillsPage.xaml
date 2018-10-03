@@ -4,5 +4,15 @@
              xmlns:prism="clr-namespace:Prism.Mvvm;assembly=Prism.Forms"
              prism:ViewModelLocator.AutowireViewModel="True"
              x:Class="EvansBioApp.Views.SkillsPage">
-  
+   <ScrollView>
+       <StackLayout>
+           <Grid>
+                <Image></Image>
+                <Image></Image>
+           </Grid>
+           <StackLayout Padding="20">
+               <Label>Test</Label>
+           </StackLayout>
+       </StackLayout>
+   </ScrollView>
 </ContentPage>
