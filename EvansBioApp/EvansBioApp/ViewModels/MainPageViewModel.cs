@@ -30,7 +30,7 @@ namespace EvansBioApp.ViewModels
         public MainPageViewModel(INavigationService navigationService)
             : base(navigationService)
         {
-            Title = "Main Page";
+            Title = "Chris Evans";
             AboutPageCommand = new DelegateCommand(async () => await NavigationService.NavigateAsync("AboutPage"));
             SkillsPageCommand = new DelegateCommand(async () => await NavigationService.NavigateAsync("SkillsPage"));
             ContactMePageCommand =
