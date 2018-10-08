@@ -2,11 +2,46 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="EvansBioApp.Views.MainPage"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:viewModels="clr-namespace:EvansBioApp.ViewModels;assembly=EvansBioApp"
+             mc:Ignorable="d"
+             d:DataContext="{d:DesignInstance viewModels:MainPageViewModel}"
              Title="{Binding Title}">
+    <Grid Margin="10,0,10,0">
+        <ListView ItemsSource="{Binding DelegateCommands}" HasUnevenRows="True" SelectedItem="{Binding SelectedButton}">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <Grid Margin="10">
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="3*"></RowDefinition>
+                                <RowDefinition Height="1*"></RowDefinition>
+                            </Grid.RowDefinitions>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="5*"></ColumnDefinition>
+                                <ColumnDefinition Width="1*"></ColumnDefinition>
+                            </Grid.ColumnDefinitions>
+                            <Image Grid.ColumnSpan="2" Grid.RowSpan="2" Source="https://via.placeholder.com/350x250" Aspect="Fill"></Image>
+                            <BoxView BackgroundColor="#6CABCB" Opacity="0.29" Grid.ColumnSpan="2" Grid.RowSpan="2"></BoxView>
 
-    <StackLayout HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
-        <Button Text="About" Command="{Binding AboutPageCommand}"></Button>
-        <Button Text="Skills" Command="{Binding SkillsPageCommand}"></Button>
-        <Button Text="Contact Me" Command="{Binding ContactMePageCommand}"></Button>
-    </StackLayout>
+                            <BoxView Grid.Column="0" Grid.Row="1" Grid.ColumnSpan="2" BackgroundColor="#455A64" Opacity="0.5"></BoxView>
+                            <StackLayout Margin="10" Grid.ColumnSpan="2" Grid.Column="0" Grid.Row="1"  HorizontalOptions="StartAndExpand" 
+                                    VerticalOptions="Center" >
+                                <Label Text="{Binding Title}"
+                                       VerticalTextAlignment="Center" FontSize="20" TextColor="White"></Label>
+                                <Label Text="{Binding SubTitle}" 
+                                       VerticalTextAlignment="Center" FontSize="12" TextColor="White"></Label>
+                            </StackLayout>
+                            <Image Grid.Column="1" Grid.Row="1" Source="https://via.placeholder.com/35x35" Aspect="AspectFill"
+                                   HorizontalOptions="Center" VerticalOptions="Center" Margin="20"></Image>
+                            
+                        </Grid>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+    </Grid>
+       
+        
 </ContentPage>

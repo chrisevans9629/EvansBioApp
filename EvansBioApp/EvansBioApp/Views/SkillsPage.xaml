@@ -11,7 +11,7 @@
                 <Image></Image>
            </Grid>
            <StackLayout Padding="20">
-               <Label>Test</Label>
+               <Label>Skills</Label>
            </StackLayout>
        </StackLayout>
    </ScrollView>
