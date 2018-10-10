@@ -1,5 +1,4 @@
 ﻿using Prism.Commands;
-using Prism.Mvvm;
 using Prism.Navigation;
 using System;
 using System.Collections.Generic;
@@ -10,19 +9,6 @@ using DelegateCommand = Prism.Commands.DelegateCommand;
 
 namespace EvansBioApp.ViewModels
 {
-    public class MainPageButton : BindableBase
-    {
-        public MainPageButton(DelegateCommand cmd, string title, string subTitle)
-        {
-            Command = cmd;
-            Title = title;
-            SubTitle = subTitle;
-        }
-        public DelegateCommand Command { get;  }
-        public string Title { get;  }
-
-        public string SubTitle { get; }
-    }
     public class MainPageViewModel : ViewModelBase
     {
         private MainPageButton _selectedButton;
