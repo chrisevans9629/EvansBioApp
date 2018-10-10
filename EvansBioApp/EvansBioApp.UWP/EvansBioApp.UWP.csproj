@@ -104,6 +104,25 @@
     </AppxManifest>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Assets\20180201_212420.png" />
+    <Content Include="Assets\21271239_1261512787293477_5469494636688246984_n.png" />
+    <Content Include="Assets\30124193_1629845827084422_2736546719113150464_n.png" />
+    <Content Include="Assets\Facebook.png" />
+    <Content Include="Assets\Image 1.png" />
+    <Content Include="Assets\Image 2.png" />
+    <Content Include="Assets\Image 3.png" />
+    <Content Include="Assets\Image 4.png" />
+    <Content Include="Assets\Image 5.png" />
+    <Content Include="Assets\NoPath - Copy %28-1.png" />
+    <Content Include="Assets\NoPath - Copy %282%29.png" />
+    <Content Include="Assets\NoPath - Copy-1.png" />
+    <Content Include="Assets\NoPath - Copy.png" />
+    <Content Include="Assets\NoPath-1.png" />
+    <Content Include="Assets\NoPath-2.png" />
+    <Content Include="Assets\NoPath.png" />
+    <Content Include="Assets\Rectangle 232.png" />
+    <Content Include="Assets\Twitter-Bird.png" />
+    <Content Include="Assets\ui notifications light.png" />
     <Content Include="Properties\Default.rd.xml" />
     <Content Include="Assets\LockScreenLogo.scale-200.png" />
     <Content Include="Assets\SplashScreen.scale-200.png" />

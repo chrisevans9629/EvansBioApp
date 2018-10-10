@@ -22,7 +22,7 @@
                                 <ColumnDefinition Width="5*"></ColumnDefinition>
                                 <ColumnDefinition Width="1*"></ColumnDefinition>
                             </Grid.ColumnDefinitions>
-                            <Image Grid.ColumnSpan="2" Grid.RowSpan="2" Source="https://via.placeholder.com/350x250" Aspect="Fill"></Image>
+                            <Image Grid.ColumnSpan="2" Grid.RowSpan="2" Source="{Binding ImageLocation}" Aspect="Fill"></Image>
                             <BoxView BackgroundColor="#6CABCB" Opacity="0.29" Grid.ColumnSpan="2" Grid.RowSpan="2"></BoxView>
 
                             <BoxView Grid.Column="0" Grid.Row="1" Grid.ColumnSpan="2" BackgroundColor="#455A64" Opacity="0.5"></BoxView>
