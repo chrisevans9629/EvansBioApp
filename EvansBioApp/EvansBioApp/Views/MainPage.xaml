@@ -23,7 +23,9 @@
                                 <ColumnDefinition Width="1*"></ColumnDefinition>
                             </Grid.ColumnDefinitions>
                             <Image Grid.ColumnSpan="2" Grid.RowSpan="2" Source="{Binding ImageLocation}" Aspect="Fill"></Image>
-                            <BoxView BackgroundColor="#6CABCB" Opacity="0.29" Grid.ColumnSpan="2" Grid.RowSpan="2"></BoxView>
+                            <BoxView BackgroundColor="#6CABCB" Opacity="0.29" Grid.ColumnSpan="2" Grid.Column="0"
+                                     Grid.Row="0"
+                                     Grid.RowSpan="2"></BoxView>
 
                             <BoxView Grid.Column="0" Grid.Row="1" Grid.ColumnSpan="2" BackgroundColor="#455A64" Opacity="0.5"></BoxView>
                             <StackLayout Margin="10" Grid.ColumnSpan="2" Grid.Column="0" Grid.Row="1"  HorizontalOptions="StartAndExpand" 
@@ -33,7 +35,7 @@
                                 <Label Text="{Binding SubTitle}" 
                                        VerticalTextAlignment="Center" FontSize="12" TextColor="White"></Label>
                             </StackLayout>
-                            <Image Grid.Column="1" Grid.Row="1" Source="https://via.placeholder.com/35x35" Aspect="AspectFill"
+                            <Image Grid.Column="1" Grid.Row="1" Source="{Binding SubImageLocation}" WidthRequest="35" HeightRequest="35" Aspect="AspectFit"
                                    HorizontalOptions="Center" VerticalOptions="Center" Margin="20"></Image>
                             
                         </Grid>

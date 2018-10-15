@@ -5,13 +5,16 @@ namespace EvansBioApp.ViewModels
 {
     public class MainPageButton : BindableBase
     {
-        public MainPageButton(DelegateCommand cmd, string title, string subTitle, string image)
+        public MainPageButton(DelegateCommand cmd, string title, string subTitle, string image, string subImageLocation)
         {
             ImageLocation = image;
+            SubImageLocation = subImageLocation;
             Command = cmd;
             Title = title;
             SubTitle = subTitle;
         }
+
+        public string SubImageLocation { get; }
 
         public string ImageLocation { get;  }
 

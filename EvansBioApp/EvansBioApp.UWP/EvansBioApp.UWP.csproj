@@ -105,12 +105,12 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Assets\20180201_212420.png" />
-    <Content Include="Assets\21271239_1261512787293477_5469494636688246984_n.png" />
-    <Content Include="Assets\30124193_1629845827084422_2736546719113150464_n.png" />
+    <Content Include="Assets\Me.png" />
+    <Content Include="Assets\Oma.png" />
     <Content Include="Assets\Facebook.png" />
-    <Content Include="Assets\Image 1.png" />
-    <Content Include="Assets\Image 2.png" />
-    <Content Include="Assets\Image 3.png" />
+    <Content Include="Assets\Main.Person.png" />
+    <Content Include="Assets\Main.Code.png" />
+    <Content Include="Assets\Main.Contact.png" />
     <Content Include="Assets\Image 4.png" />
     <Content Include="Assets\Image 5.png" />
     <Content Include="Assets\NoPath - Copy %28-1.png" />

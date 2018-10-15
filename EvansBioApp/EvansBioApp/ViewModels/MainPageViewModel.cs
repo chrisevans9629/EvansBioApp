@@ -23,16 +23,23 @@ namespace EvansBioApp.ViewModels
                 new DelegateCommand(async () => await NavigationService.NavigateAsync("ContactMePage"));
             DelegateCommands = new ObservableCollection<MainPageButton>()
             {
-                new MainPageButton(AboutPageCommand, "About Me", "Who I am and what I do", "Assets/Image 4.png"),
-                new MainPageButton(SkillsPageCommand, "My Skills", "My stenghts and proficiencies", "Assets/NoPath-1.png"),
-                new MainPageButton(ContactMePageCommand, "Contact Me", "Need more information?  Let me know!", "Assets/NoPath.png")
+                new MainPageButton(AboutPageCommand, "About Me", "Who I am and what I do", "Assets/Image 4.png", "Assets/Main.Person.png"),
+                new MainPageButton(SkillsPageCommand, "My Skills", "My strength and proficiencies", "Assets/NoPath-1.png", "Assets/Main.Code.png"),
+                new MainPageButton(ContactMePageCommand, "Contact Me", "Need more information?  Let me know!", "Assets/NoPath.png", "Assets/Main.Contact.png")
             };
         }
 
         public MainPageButton SelectedButton
         {
             get => _selectedButton;
-            set { SetProperty(ref _selectedButton, value, () => SelectedButton?.Command.Execute()); }
+            set { SetProperty(ref _selectedButton, value, () =>
+            {
+                if (SelectedButton != null)
+                {
+                    SelectedButton.Command.Execute();
+                    SelectedButton = null;
+                }
+            }); }
         }
 
         public ObservableCollection<MainPageButton> DelegateCommands { get; set; }
