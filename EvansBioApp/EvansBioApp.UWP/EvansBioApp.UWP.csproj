@@ -104,33 +104,33 @@
     </AppxManifest>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Assets\20180201_212420.png" />
-    <Content Include="Assets\Me.png" />
-    <Content Include="Assets\Oma.png" />
+    <Content Include="Assets\AspNet.png" />
+    <Content Include="Assets\BlackHole.png" />
     <Content Include="Assets\Facebook.png" />
-    <Content Include="Assets\Main.Person.png" />
-    <Content Include="Assets\Main.Code.png" />
-    <Content Include="Assets\Main.Contact.png" />
-    <Content Include="Assets\Main.Tree.png" />
-    <Content Include="Assets\Image 5.png" />
-    <Content Include="Assets\NoPath - Copy %28-1.png" />
-    <Content Include="Assets\NoPath - Copy %282%29.png" />
-    <Content Include="Assets\NoPath - Copy-1.png" />
-    <Content Include="Assets\NoPath - Copy.png" />
-    <Content Include="Assets\Main.CSharp.png" />
-    <Content Include="Assets\NoPath-2.png" />
-    <Content Include="Assets\Main.Phone.png" />
-    <Content Include="Assets\Rectangle 232.png" />
-    <Content Include="Assets\Twitter-Bird.png" />
-    <Content Include="Assets\ui notifications light.png" />
-    <Content Include="Properties\Default.rd.xml" />
+    <Content Include="Assets\FSharpCode.png" />
+    <Content Include="Assets\Illustrator.png" />
     <Content Include="Assets\LockScreenLogo.scale-200.png" />
+    <Content Include="Assets\MainCode.png" />
+    <Content Include="Assets\MainContact.png" />
+    <Content Include="Assets\MainCSharp.png" />
+    <Content Include="Assets\MainPerson.png" />
+    <Content Include="Assets\MainPhone.png" />
+    <Content Include="Assets\MainTree.png" />
+    <Content Include="Assets\Me.png" />
+    <Content Include="Assets\Music.png" />
+    <Content Include="Assets\Office.png" />
+    <Content Include="Assets\Oma.png" />
+    <Content Include="Assets\Rectangle.png" />
     <Content Include="Assets\SplashScreen.scale-200.png" />
     <Content Include="Assets\Square150x150Logo.scale-200.png" />
     <Content Include="Assets\Square44x44Logo.scale-200.png" />
     <Content Include="Assets\Square44x44Logo.targetsize-24_altform-unplated.png" />
     <Content Include="Assets\StoreLogo.png" />
+    <Content Include="Assets\TwitterBird.png" />
+    <Content Include="Assets\ui notifications light.png" />
+    <Content Include="Assets\VisualStudio.png" />
     <Content Include="Assets\Wide310x150Logo.scale-200.png" />
+    <Content Include="Properties\Default.rd.xml" />
   </ItemGroup>
   <ItemGroup>
     <ApplicationDefinition Include="App.xaml">
