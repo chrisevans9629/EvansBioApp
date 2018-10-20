@@ -3,9 +3,9 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:prism="clr-namespace:Prism.Mvvm;assembly=Prism.Forms"
              prism:ViewModelLocator.AutowireViewModel="True"
-             x:Class="EvansBioApp.Views.AboutPage">
+             x:Class="EvansBioApp.Views.AboutPage" BackgroundColor="{StaticResource Background}">
     <ScrollView>
-        <Grid Margin="10">
+        <Grid Margin="15">
             <Grid.RowDefinitions>
                 <RowDefinition Height="300"></RowDefinition>
                 <RowDefinition Height="Auto"></RowDefinition>
@@ -19,9 +19,10 @@
                     <ColumnDefinition Width="3*"/>
                     <ColumnDefinition Width="1*"/>
                 </Grid.ColumnDefinitions>
-                <Image Source="Assets/Me.png" Grid.Column="0" Grid.Row="0" Aspect="AspectFit"></Image>
+                <Image Source="Assets/Oma.png" Grid.Row="0" Grid.Column="0" Aspect="AspectFit" ></Image>
+
             </Grid>
-            <Grid>
+            <Grid Grid.Row="0">
                 <Grid.RowDefinitions>
                     <RowDefinition Height="1*"/>
                     <RowDefinition Height="3*"/>
@@ -30,10 +31,12 @@
                     <ColumnDefinition Width="1*"/>
                     <ColumnDefinition Width="3*"/>
                 </Grid.ColumnDefinitions>
-                <Image Source="Assets/Oma.png" Aspect="AspectFit" Grid.Row="1" Grid.Column="1"></Image>
-            </Grid>
+                <Image Source="Assets/Me.png" Grid.Column="1" Grid.Row="1" Aspect="AspectFit"></Image>
 
-            <Label Text="{StaticResource AboutMe}" Margin="10"   Grid.Row="1"></Label>
+            </Grid>
+            <Grid Grid.Row="1" BackgroundColor="{StaticResource TextBox.Background}">
+                <Label Text="{StaticResource AboutMe}" Margin="10" TextColor="White"  />
+            </Grid>
         </Grid>
 
     </ScrollView>

@@ -3,9 +3,9 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:prism="clr-namespace:Prism.Autofac;assembly=Prism.Autofac.Forms"
              x:Class="EvansBioApp.App">
-	<Application.Resources>
+    <Application.Resources>
         <x:String x:Key="AboutMe">
-                Hello! My name is Chris Evans and I am a software developer currently at Peerless Inc.  I develop desktop and mobile apps, along with building reports and structuring data in SQL Server.  Programming is also a hobby of mine, especially machine learning and artificial intelligence.  My favorite is an AI I created that can play 2048 and Tic-tac-toe.  I enjoy the backend of software more than the frontend.  I enjoy learning how algorithms, like the machine learning algorithm 'NEAT', works and building reusable code from which I can build software.
+            Hello! My name is Chris Evans and I am a software developer currently at Peerless Inc.  I develop desktop and mobile apps, along with building reports and structuring data in SQL Server.  Programming is also a hobby of mine, especially machine learning and artificial intelligence.  My favorite is an AI I created that can play 2048 and Tic-tac-toe.  I enjoy the backend of software more than the frontend.  I enjoy learning how algorithms, like the machine learning algorithm 'NEAT', works and building reusable code from which I can build software.
             I also have other interests as well.  I play and write music, enjoy painting on the weekends, game with friends and family, build computers, and appreciate the philosophical thought and readings.  I like reading about ethical dilemmas and other unsolved mysteries, along with scientific literature, especially regarding the cosmos, evolution of life, and the underpinnings of human nature.  If the philosophy job market was better, I might have found myself doing that instead of programming, and continue to program on the side.  I enjoy debating with people and having deep discussions.  I love to hear other people's perspectives, and I think it's an important quality to have in any career.
             If I was to summarize what makes 'me' me, I would say that I enjoy analyzing and solving problems, whether that be building reports, writing code, or simply exploring ideas and philosophical thoughts.
         </x:String>
@@ -43,7 +43,25 @@
             Prism
             WinForms
         </x:String>
-		<!-- Application resource dictionary -->
 
-	</Application.Resources>
+        <x:String x:Key="Facebook">
+            Add me on facebook!
+        </x:String>
+        <x:String x:Key="Twitter">
+            Follow me on twitter!
+        </x:String>
+
+        <x:String x:Key="Email.Header">
+            Like to know more about me?  Send me an Email!
+        </x:String>
+        <x:String x:Key="Success.Message">
+            Thank you for your message!  We have received your message and will reply as soon as we can.
+        </x:String>
+        <!-- Application resource dictionary -->
+        <Color x:Key="Background">#126D8A</Color>
+        <Color x:Key="TextBox.Background">#6CABCB</Color>
+        <Color x:Key="Header.Background">#78D7F5</Color>
+        <Color x:Key="Button.Background">#78D7F5</Color>
+
+    </Application.Resources>
 </prism:PrismApplication>
