@@ -2333,8 +2333,26 @@ namespace EvansBioApp.Droid
 			// aapt resource value: 0x7f020054
 			public const int avd_hide_password = 2130837588;
 			
+			// aapt resource value: 0x7f020141
+			public const int avd_hide_password_1 = 2130837825;
+			
+			// aapt resource value: 0x7f020142
+			public const int avd_hide_password_2 = 2130837826;
+			
+			// aapt resource value: 0x7f020143
+			public const int avd_hide_password_3 = 2130837827;
+			
 			// aapt resource value: 0x7f020055
 			public const int avd_show_password = 2130837589;
+			
+			// aapt resource value: 0x7f020144
+			public const int avd_show_password_1 = 2130837828;
+			
+			// aapt resource value: 0x7f020145
+			public const int avd_show_password_2 = 2130837829;
+			
+			// aapt resource value: 0x7f020146
+			public const int avd_show_password_3 = 2130837830;
 			
 			// aapt resource value: 0x7f020056
 			public const int BlackHole = 2130837590;

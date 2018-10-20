@@ -42,7 +42,7 @@ namespace EvansBioApp.ViewModels
             }); }
         }
 
-        public override void OnNavigatedTo(NavigationParameters parameters)
+        public override void OnNavigatedTo(INavigationParameters parameters)
         {
             SelectedButton = null;
         }
