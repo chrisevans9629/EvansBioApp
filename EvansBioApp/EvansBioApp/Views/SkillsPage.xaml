@@ -3,16 +3,35 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:prism="clr-namespace:Prism.Mvvm;assembly=Prism.Forms"
              prism:ViewModelLocator.AutowireViewModel="True"
-             x:Class="EvansBioApp.Views.SkillsPage">
-   <ScrollView>
-       <StackLayout>
-           <Grid>
-                <Image></Image>
-                <Image></Image>
-           </Grid>
-           <StackLayout Padding="20">
-               <Label>Skills</Label>
-           </StackLayout>
-       </StackLayout>
-   </ScrollView>
+             x:Class="EvansBioApp.Views.SkillsPage" BackgroundColor="{StaticResource Background}">
+    <ScrollView>
+        <Grid RowSpacing="10" ColumnSpacing="10" Margin="10">
+            <Grid.Resources>
+                <Style TargetType="StackLayout">
+                    <Setter Property="BackgroundColor" Value="{StaticResource TextBox.Background}"></Setter>
+                </Style>
+                <Style TargetType="Label">
+                    <Setter Property="TextColor" Value="White"></Setter>
+                </Style>
+            </Grid.Resources>
+            <Grid.RowDefinitions>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="2*"></ColumnDefinition>
+                <ColumnDefinition Width="3*"></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+
+            <StackLayout Padding="10">
+                <Label Text="{StaticResource Skills.Programming}"></Label>
+            </StackLayout>
+            <StackLayout Padding="5" Grid.Row="0" Grid.Column="1">
+                <Image  Source="Assets/FSharpCode.png"></Image>
+            </StackLayout>
+
+        </Grid>
+    </ScrollView>
 </ContentPage>

@@ -60,8 +60,11 @@
         <!-- Application resource dictionary -->
         <Color x:Key="Background">#126D8A</Color>
         <Color x:Key="TextBox.Background">#6CABCB</Color>
+        <Color x:Key="Entry.Background">#6CABCB</Color>
+        <Color x:Key="Entry.Placeholder">LightGray</Color>
         <Color x:Key="Header.Background">#78D7F5</Color>
         <Color x:Key="Button.Background">#78D7F5</Color>
+
 
     </Application.Resources>
 </prism:PrismApplication>
