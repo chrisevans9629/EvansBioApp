@@ -21,10 +21,10 @@
                 </Style>
             </Grid.Resources>
             <Grid.RowDefinitions>
-                <RowDefinition></RowDefinition>
-                <RowDefinition></RowDefinition>
-                <RowDefinition></RowDefinition>
-                <RowDefinition></RowDefinition>
+                <RowDefinition Height="175"></RowDefinition>
+                <RowDefinition Height="150"></RowDefinition>
+                <RowDefinition Height="160"></RowDefinition>
+                <RowDefinition Height="175"></RowDefinition>
             </Grid.RowDefinitions>
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="2*"></ColumnDefinition>
@@ -35,7 +35,7 @@
                 <Label Text="{StaticResource Skills.Programming}"></Label>
             </StackLayout>
             <StackLayout Padding="5" Grid.Row="0" Grid.Column="1">
-                <Image  Source="Assets/FSharpCode.png"></Image>
+                <Image  Source="Assets/FSharpCode.png" ></Image>
             </StackLayout>
 
             <StackLayout Grid.Row="1" Grid.Column="0">
@@ -51,7 +51,7 @@
                     <Image Grid.Row="0" Grid.Column="0" Source="Assets/VisualStudio.png"></Image>
                     <Image Grid.Row="0" Grid.Column="1" Source="Assets/Illustrator.png"></Image>
                     <Image Grid.Row="1" Grid.Column="0" Source="Assets/Office.png"></Image>
-                    <Image Grid.Row="1" Grid.Column="1" Source="Assets/Aspnet.png"></Image>
+                    <Image Grid.Row="1" Grid.Column="1" Source="Assets/AspNet.png"></Image>
                 </Grid>
                
             </StackLayout>

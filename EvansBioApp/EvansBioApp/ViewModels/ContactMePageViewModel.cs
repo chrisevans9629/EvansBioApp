@@ -3,18 +3,19 @@ using Prism.Mvvm;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using Prism.Navigation;
 using Prism.Services;
 
 namespace EvansBioApp.ViewModels
 {
-	public class ContactMePageViewModel : BindableBase
+	public class ContactMePageViewModel : ViewModelBase
 	{
 	    private readonly IPageDialogService _pageDialog;
 	    private string _details;
 	    private string _subject;
 	    private string _email;
 
-	    public ContactMePageViewModel(IPageDialogService pageDialog)
+	    public ContactMePageViewModel(IPageDialogService pageDialog, INavigationService navigationService): base(navigationService) 
 	    {
 	        _pageDialog = pageDialog;
 	        SendCommand = new DelegateCommand(Send, CanSend);
@@ -51,7 +52,7 @@ namespace EvansBioApp.ViewModels
 	    {
 	        await _pageDialog.DisplayAlertAsync("Success!",
 	            "Thank you for your message!\nWe have received your message and will reply as soon as we can.", "OK");
-
+	        await NavigationService.GoBackAsync();
 	    }
 
 	    public DelegateCommand SendCommand { get; set; }
