@@ -31,14 +31,14 @@
                 <ColumnDefinition Width="3*"></ColumnDefinition>
             </Grid.ColumnDefinitions>
 
-            <StackLayout>
-                <Label Text="{StaticResource Skills.Programming}"></Label>
+            <StackLayout x:Name="programming">
+                <Label Text="{StaticResource Skills.Programming}" ></Label>
             </StackLayout>
-            <StackLayout Padding="5" Grid.Row="0" Grid.Column="1">
+            <StackLayout Padding="5" Grid.Row="0" Grid.Column="1" x:Name="fsharp">
                 <Image  Source="Assets/FSharpCode.png" ></Image>
             </StackLayout>
 
-            <StackLayout Grid.Row="1" Grid.Column="0">
+            <StackLayout Grid.Row="1" Grid.Column="0" x:Name="apps">
                 <Grid>
                     <Grid.RowDefinitions>
                         <RowDefinition></RowDefinition>
@@ -55,24 +55,24 @@
                 </Grid>
                
             </StackLayout>
-            <StackLayout Grid.Row="1" Grid.Column="1">
+            <StackLayout Grid.Row="1" Grid.Column="1" x:Name="framework">
                 <Label Text="{StaticResource Skills.Frameworks}"></Label>
             </StackLayout>
 
-            <StackLayout Grid.Row="2" Grid.Column="0">
+            <StackLayout Grid.Row="2" Grid.Column="0" x:Name="software">
                 <Label Text="{StaticResource Skills.Software}"></Label>
             </StackLayout>
 
-            <StackLayout Grid.Row="2" Grid.Column="1">
+            <StackLayout Grid.Row="2" Grid.Column="1" x:Name="blackhole">
                 <Image Source="Assets/BlackHole.png"></Image>
             </StackLayout>
 
 
-            <StackLayout Grid.Row="3" Grid.Column="0">
+            <StackLayout Grid.Row="3" Grid.Column="0" x:Name="music">
                 <Image Source="Assets/Music.png"></Image>
             </StackLayout>
 
-            <StackLayout Grid.Row="3" Grid.Column="1">
+            <StackLayout Grid.Row="3" Grid.Column="1" x:Name="other">
                 <Label Text="{StaticResource Skills.Other}"></Label>
             </StackLayout>
         </Grid>
