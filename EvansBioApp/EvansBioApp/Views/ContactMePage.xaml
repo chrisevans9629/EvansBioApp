@@ -30,6 +30,7 @@
             <StackLayout Grid.Row="1" Margin="10" BackgroundColor="{StaticResource TextBox.Background}" Padding="10">
                 <Label Text="{StaticResource Email.Header}" TextColor="White"></Label>
                 <Label></Label>
+                <Label Text="{Binding ErrorMessage}" IsVisible="{Binding Invalid}" TextColor="Red"></Label>
                 <Entry Placeholder="Email" Text="{Binding Email}" TextColor="White" PlaceholderColor="{StaticResource Entry.Placeholder}" BackgroundColor="{StaticResource Entry.Background}"></Entry>
                 <Entry Placeholder="Subject" Text="{Binding Subject}" TextColor="White" PlaceholderColor="{StaticResource Entry.Placeholder}" BackgroundColor="{StaticResource Entry.Background}"></Entry>
                 <Editor Placeholder="Details" HeightRequest="150" Text="{Binding Details}" TextColor="White" PlaceholderColor="{StaticResource Entry.Placeholder}" BackgroundColor="{StaticResource Entry.Background}"></Editor>
