@@ -64,7 +64,9 @@ WinForms
         <Color x:Key="Entry.Placeholder">LightGray</Color>
         <Color x:Key="Header.Background">#78D7F5</Color>
         <Color x:Key="Button.Background">#78D7F5</Color>
-
+        <Style TargetType="NavigationPage">
+            <Setter Property="BarBackgroundColor" Value="{StaticResource Header.Background}"></Setter>
+        </Style>
 
     </Application.Resources>
 </prism:PrismApplication>

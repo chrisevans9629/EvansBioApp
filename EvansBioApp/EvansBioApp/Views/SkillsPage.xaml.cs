@@ -1,7 +1,44 @@
-﻿using Xamarin.Forms;
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
+using Xamarin.Forms;
 
 namespace EvansBioApp.Views
 {
+    public static class AnimationExt
+    {
+        public static async Task PreAnimate(this View view, Func<View, Task> viewAction = null)
+        {
+            if (viewAction == null)
+            {
+                viewAction = async view1 => await view.ScaleTo(0, 0);
+            }
+            await viewAction.Invoke(view);
+        }
+        public static async Task Animate(this View view)
+        {
+            await view.ScaleTo(1, 250);
+        }
+
+        public static async Task AnimateList(this IEnumerable<View> views)
+        {
+
+#pragma warning disable 4014
+            var children = views.ToList();
+            foreach (var child in children)
+            {
+                child.PreAnimate();
+            }
+#pragma warning restore 4014
+
+            await Task.Delay(100);
+            foreach (var child in children)
+            {
+                await child.Animate();
+            }
+        }
+    }
     public interface ISkillsPage
     {
 
@@ -12,41 +49,14 @@ namespace EvansBioApp.Views
         public SkillsPage()
         {
             InitializeComponent();
-            
+
         }
 
         protected override async void OnAppearing()
         {
             base.OnAppearing();
-           
-            PreAnimate(programming);
-            PreAnimate(fsharp);
-            PreAnimate(apps);
-            PreAnimate(framework);
-            PreAnimate(software);
-            PreAnimate(blackhole);
-            PreAnimate(music);
-            PreAnimate(other);
+            await Grid.Children.AnimateList();
 
-            await Animate(programming);
-            await Animate(fsharp);
-            await Animate(apps);
-            await Animate(framework);
-            await Animate(software);
-            await Animate(blackhole);
-            await Animate(music);
-            await Animate(other);
-
-        }
-
-
-        private async System.Threading.Tasks.Task PreAnimate(View view)
-        {
-            await view.ScaleTo(0, 0);
-        }
-        private async System.Threading.Tasks.Task Animate(View view)
-        {
-            await view.ScaleTo(1);
         }
     }
 }

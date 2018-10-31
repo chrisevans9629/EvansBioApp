@@ -5,7 +5,7 @@
              prism:ViewModelLocator.AutowireViewModel="True"
              x:Class="EvansBioApp.Views.AboutPage" BackgroundColor="{StaticResource Background}" Title="About Chris Evans">
     <ScrollView>
-        <Grid Margin="15">
+        <Grid Margin="15" x:Name="Grid">
             <Grid.RowDefinitions>
                 <RowDefinition Height="100"></RowDefinition>
                 <RowDefinition Height="200"></RowDefinition>
